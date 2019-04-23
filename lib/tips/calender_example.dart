@@ -26,27 +26,25 @@ class _CalenderExampleState extends State<CalenderExample> {
           title: Text("Calender Example"),
         ),
         body: Container(
-          child: Container(
-            child: CalendarCarousel<Event>(
-                onDayPressed: onDayPressed,
-                weekendTextStyle: TextStyle(color: Colors.red),
-                thisMonthDayBorderColor: Colors.grey,
-                weekFormat: false,
-                height: 420.0,
-                selectedDateTime: _currentDate,
-                daysHaveCircularBorder: false,
-                customGridViewPhysics: NeverScrollableScrollPhysics(),
-                markedDateShowIcon: true,
-                markedDateIconMaxShown: 2,
-                todayTextStyle: TextStyle(
-                  color: Colors.blue,
-                ),
-                markedDateIconBuilder: (event) {
-                  return event.icon;
-                },
-                todayBorderColor: Colors.green,
-                markedDateMoreShowTotal: false),
-          ),
+          child: CalendarCarousel<Event>(
+              onDayPressed: onDayPressed,
+              weekendTextStyle: TextStyle(color: Colors.red),
+              thisMonthDayBorderColor: Colors.grey,
+              weekFormat: false,
+              height: 420.0,
+              selectedDateTime: _currentDate,
+              daysHaveCircularBorder: false,
+              customGridViewPhysics: NeverScrollableScrollPhysics(),
+              markedDateShowIcon: true,
+              markedDateIconMaxShown: 2,
+              todayTextStyle: TextStyle(
+                color: Colors.blue,
+              ),
+              markedDateIconBuilder: (event) {
+                return event.icon;
+              },
+              todayBorderColor: Colors.green,
+              markedDateMoreShowTotal: false),
         ));
   }
 }
