@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_play_ground/card_item.dart';
-import 'package:flutter_play_ground/calender_example.dart';
+import 'package:flutter_play_ground/main/card_item.dart';
+import 'package:flutter_play_ground/tips/calender_example.dart';
 
 void main() => runApp(MaterialApp(
       title: 'TimeTable',
