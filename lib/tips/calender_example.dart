@@ -67,6 +67,7 @@ class _CalenderExampleState extends State<CalenderExample> {
               markedDatesMap: _markedDateMap,
               markedDateShowIcon: true,
               markedDateIconMaxShown: 2,
+              locale: 'JA',
               todayTextStyle: TextStyle(
                 color: Colors.blue,
               ),
