@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_play_ground/main/card_item.dart';
 import 'package:flutter_play_ground/tips/calender_example.dart';
 import 'package:flutter_play_ground/tips/chart_example.dart';
+import 'package:flutter_play_ground/tips/mobile_vision_example.dart';
 
 void main() => runApp(MaterialApp(
       title: 'TimeTable',
@@ -18,7 +19,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<CardItem> cards = [
     CardItem("Calender Example", CalenderExample()),
-    CardItem("Chart Example", ChartExample())
+    CardItem("Chart Example", ChartExample()),
+    CardItem("OCR Example", MobileVisionExample()),
   ];
 
 
