@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_play_ground/main/card_item.dart';
 import 'package:flutter_play_ground/tips/calender_example.dart';
+import 'package:flutter_play_ground/tips/carousel_slider_example.dart';
 import 'package:flutter_play_ground/tips/chart_example.dart';
 import 'package:flutter_play_ground/tips/mobile_vision_example.dart';
 
@@ -21,6 +22,7 @@ class _HomeState extends State<Home> {
     CardItem("Calender Example", CalenderExample()),
     CardItem("Chart Example", ChartExample()),
     CardItem("OCR Example", MobileVisionExample()),
+    CardItem("Carousel Example", CarouselWithIndicator()),
   ];
 
 
